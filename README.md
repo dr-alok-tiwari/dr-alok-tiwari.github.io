@@ -1,4 +1,4 @@
-# Shaping the Future of Healthcare AI: A Collaborative Journey through Teaching, Research, and Consulting 
+## Guiding Healthcare AI Innovation: A Visionary Research Scientist and Data Scientist Empowering Your Team's Advancement with Strategic Leadership
 
 <p style="text-align: justify;">🔝 LinkedIn Top Voice - AI, ML, Data Science &amp; Data Engineering 🔝 🔍 Passionate Researcher -Artificial Intelligence in Healthcare | 🌐 </p>
 
