@@ -1,4 +1,4 @@
-## Transforming Healthcare with Responsible AI: Your Visionary Partner
+## ✨ Transforming Healthcare with Responsible AI 🏥  💡 Your Visionary Partner 🌟
 
 <p style="text-align: justify;">🔝 LinkedIn Top Voice - AI, ML, Data Science &amp; Data Engineering 🔝 🔍 Passionate Researcher -Artificial Intelligence in Healthcare | 🌐 </p>
 
