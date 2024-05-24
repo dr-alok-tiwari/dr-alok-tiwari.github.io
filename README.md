@@ -18,7 +18,8 @@
 <p style="text-align: justify;">Unlocking healthcare insights with AI. I'm a researcher and Assistant Professor leveraging AI (Machine Learning, Deep Learning) to tackle healthcare challenges. My expertise in data science and medical image analysis helps unlock valuable insights for better diagnosis and treatment.</p>
 
 ## Expertise : 
-| Field | Expertise |
+
+| Field                          | Expertise                                                                                                                            |
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | 🤖 Machine Learning            | Regression, Classification, Clustering                                                                                               |
 | 🧠 Deep Learning               | CNN, RNN, GAN, U-Net, VGG-Net, Inception Net, LLM, Transfer Learning                                                                 |
