@@ -1,17 +1,11 @@
 # Shaping the Future of Healthcare AI: A Collaborative Journey through Teaching, Research, and Consulting 
-##### [Dr. Alok Tiwari (PhD, IIT-BHU) : Assistant Professor, Big Data Analytics, Goa Institute of Management, Goa, India](https://gim.ac.in/faculty/alok-tiwari)
 
+<p style="text-align: justify;">🔝 LinkedIn Top Voice - AI, ML, Data Science &amp; Data Engineering 🔝 🔍 Passionate Researcher -Artificial Intelligence in Healthcare | 🌐 </p>
 
-<p style="text-align: justify;">🔝 LinkedIn Top Voice - AI, ML, Data Science &amp; Data Engineering 🔝 🔍 Passionate Researcher -Artificial Intelligence in Healthcare | 🌐 .</p>
+##### | [Dr. Alok Tiwari : Assistant Professor, Big Data Analytics, Goa Institute of Management, Goa, India](https://gim.ac.in/faculty/alok-tiwari)   |   Book an Appointment: [dr_alok_tiwari ](https://topmate.io/dr_alok_tiwari) |
 
+###### Email: [shodhkarta.alok@gmail.com](mailto:shodhkarta.alok@gmail.com) | Linkedin : [dr-alok-tiwari/](https://www.linkedin.com/in/dr-alok-tiwari/) | ORCID : [ID = 0000-0003-3605-8565](https://orcid.org/0000-0003-3605-8565?lang=en) | GitHub : [dr-alok-tiwari](https://github.com/dr-alok-tiwari) | Google Scholar : [user=jE6HZ0gAAAAJ&hl=en](https://scholar.google.com/citations?user=jE6HZ0gAAAAJ&hl=en) |
 
-
-**Email:** [shodhkarta.alok@gmail.com](mailto:shodhkarta.alok@gmail.com) | 
-**Linkedin :** [dr-alok-tiwari/](https://www.linkedin.com/in/dr-alok-tiwari/) | 
-**ORCID :** [ID = 0000-0003-3605-8565](https://orcid.org/0000-0003-3605-8565?lang=en) | 
-**GitHub :** [dr-alok-tiwari](https://github.com/dr-alok-tiwari) | 
-**Google Scholar :** [user=jE6HZ0gAAAAJ&hl=en](https://scholar.google.com/citations?user=jE6HZ0gAAAAJ&hl=en) |
-**Book an Appointment:** [dr_alok_tiwari ](https://topmate.io/dr_alok_tiwari)
 
 <p style="text-align: justify;">This profile elegantly illustrates my odyssey through the realms of Data Science, Artificial Intelligence, and their interconnected fields. My fervor lies in harnessing these cutting-edge technologies to effectuate meaningful change across diverse domains..</p>
 
