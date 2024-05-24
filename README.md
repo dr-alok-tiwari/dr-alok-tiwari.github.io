@@ -1,4 +1,4 @@
-## Guiding Healthcare AI Innovation: A Visionary Artificial Intelligence Researcher and Data Scientist Empowering Your Team's Advancement with Strategic Leadership
+## Transforming Healthcare with Responsible AI: Your Visionary Partner
 
 <p style="text-align: justify;">🔝 LinkedIn Top Voice - AI, ML, Data Science &amp; Data Engineering 🔝 🔍 Passionate Researcher -Artificial Intelligence in Healthcare | 🌐 </p>
 
