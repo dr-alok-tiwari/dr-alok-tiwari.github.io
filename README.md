@@ -1,4 +1,4 @@
-## | Shaping the Future of Healthcare AI : Visionary Researcher & Data Scientist |
+## || Shaping the Future of Healthcare AI : Visionary Researcher & Data Scientist ||
 
 <p style="text-align: justify;">🔝 LinkedIn Top Voice - AI, ML, Data Science &amp; Data Engineering 🔝 🔍 Passionate Researcher -Artificial Intelligence in Healthcare | 🌐 </p>
 
