@@ -106,6 +106,6 @@ Delivery and Regenerative Medicine (BiTERM), IIT Delhi, New Delhi, India., 2016.
 * Available upon request
 
 
-## Looking forward to collaborating and exploring exciting opportunities!
+** Looking forward to collaborating and exploring exciting opportunities!
 
 
