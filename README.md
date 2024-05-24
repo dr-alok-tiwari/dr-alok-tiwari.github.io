@@ -1,7 +1,7 @@
 ## Shaping the Future of Healthcare AI : Visionary Researcher & Data Scientist
 
 <p style="text-align: justify;">🔝 LinkedIn Top Voice - AI, ML, Data Science &amp; Data Engineering 🔝 </p>
-<p style="text-align: justify;"> 🔍 Passionate Researcher -Artificial Intelligence in Healthcare  🌐 </p>
+<p style="text-align: justify;"> 🔍 Passionate Researcher - Artificial Intelligence in Healthcare  🌐 </p>
 
 ##### [Dr. Alok Tiwari : Assistant Professor, Big Data Analytics, Goa Institute of Management, Goa, India](https://gim.ac.in/faculty/alok-tiwari)  
 ##### Book an Appointment: [dr_alok_tiwari ](https://topmate.io/dr_alok_tiwari)
