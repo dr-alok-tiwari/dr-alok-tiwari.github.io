@@ -1,7 +1,8 @@
 ## Shaping the Future of Healthcare AI : Visionary Researcher & Data Scientist
 
-| <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="dr-alok-tiwari" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/dr-alok-tiwari?trk=profile-badge">Dr. Alok Tiwari</a></div> | Email: [shodhkarta.alok@gmail.com](mailto:shodhkarta.alok@gmail.com), ORCID : [ID = 0000-0003-3605-8565](https://orcid.org/0000-0003-3605-8565?lang=en) , GitHub : [dr-alok-tiwari](https://github.com/dr-alok-tiwari), Google Scholar : [user=jE6HZ0gAAAAJ&hl=en](https://scholar.google.com/citations?user=jE6HZ0gAAAAJ&hl=en)|
-|---|---|
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="dr-alok-tiwari" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/dr-alok-tiwari?trk=profile-badge">Dr. Alok Tiwari</a></div> 
+| Email: [shodhkarta.alok@gmail.com](mailto:shodhkarta.alok@gmail.com), ORCID : [ID = 0000-0003-3605-8565](https://orcid.org/0000-0003-3605-8565?lang=en) , GitHub : [dr-alok-tiwari](https://github.com/dr-alok-tiwari), Google Scholar : [user=jE6HZ0gAAAAJ&hl=en](https://scholar.google.com/citations?user=jE6HZ0gAAAAJ&hl=en)|
+|---|
 
 
 
