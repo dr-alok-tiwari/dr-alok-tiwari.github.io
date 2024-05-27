@@ -1,7 +1,9 @@
 ## Shaping the Future of Healthcare AI : Visionary Researcher & Data Scientist
 
+
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="extra-large" data-theme="light" data-type="HORIZONTAL" data-vanity="dr-alok-tiwari" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/dr-alok-tiwari?trk=profile-badge">Dr. Alok Tiwari</a></div>
+              
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="dr-alok-tiwari" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/dr-alok-tiwari?trk=profile-badge">Dr. Alok Tiwari</a></div>
 
 ##### [Assistant Professor, Big Data Analytics, Goa Institute of Management, Goa, India](https://gim.ac.in/faculty/alok-tiwari)  
 ##### Book an Appointment: [dr_alok_tiwari ](https://topmate.io/dr_alok_tiwari)
