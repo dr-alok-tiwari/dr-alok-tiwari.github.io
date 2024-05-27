@@ -48,6 +48,30 @@
 | Guest Faculty       | Mar 2022 - Dec 2023         | NMIMS Mumbai                                                                        | Mumbai, India               |
 
 
+## Courses Taught
+
+| Programmes/Subjects/Topics | Total Duration (Hrs.) | Feedback Rating (out of 5) |
+|---|---|---|
+| PGP Certificate Program - Basic Statistics | 16 | 5 |
+| PGP Certificate Program - Python (Introduction, Data types, Control structure, Function, File handling, Numpy, Data Preprocessing, feature eng., Pandas, Sklearn, Seaborn, plotly, matplotlib ) | 22 | 4.8 |
+| PGP Certificate Program - SQL & ETL | 20 | 4.7 |
+| PGP Certificate Program - Big Data Engineering-01 (Introduction to Big Data, Hadoop, MapReduce, Linux Activity, Spark, SparkML) | 26 | 4.6 |
+| PGP Certificate Program - Big Data Engineering-02 ( Hive, Advanced Hive, NoSQL, Kafka, Spark Streaming, Spark ML - Advanced ML Models ) | 22 | 4.4 |
+| PGP Certificate Program - Computer Vision | 40 | 4.9 |
+| PGP Certificate Program - Machine Learning | 40 | 4.7 |
+| PGP Certificate Program - Cloud (Introduction to cloud, Azure - IAAS, Data Factory, Databricks, ML) | 28 | 4.6 |
+| PGP Certificate Program - DevOps and MLOps (DevOps basics, CI/CD, Jenkins, Git and Gihub, Python code formatting, Docker, Container, ngrok) | 20 | 4.4 |
+| MS in Artificial Intelligence - Big Data Engineering-01 (Introduction to Big Data, Hadoop, MapReduce, Linux Activity, Spark, SparkML) | 26 | 4.5 |
+| MS in Artificial Intelligence - Big Data Engineering-02 ( Hive, Advanced Hive, NoSQL, Kafka, Spark Streaming, Spark ML - Advanced ML Models ) | 22 | 4.7 |
+| MS in Artificial Intelligence - Computer Vision | 40 | 4.8 |
+| MS in Artificial Intelligence - DevOps BootCamp | 40 | 4.6 |
+| PGDM-BDA - Visionary Management - Navigating Business Realities with AR and VR | 20 | 4.4 |
+| PGDM-BDA - Logic, Reasoning and Critical Thinking | 20 | 4.9 |
+| PGDM-BDA - Data Science Unleashed: Managerial approach  | 30 | 4.4 |
+| PGDM-BDA - Data-Driven HR: Unleashing People Analytics | 30 | 4.9 |
+
+
+
 ## Education
 
 | Degree  | Field                                           | Dates  | Institution                                                         | Location                   | 
