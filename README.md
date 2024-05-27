@@ -50,8 +50,8 @@
 
 ## Courses Taught
 
-| Programmes/Subjects/Topics | Total Duration (Hrs.) | Feedback Rating (out of 5) |
-|---|---|---|
+| Programmes|Subjects/Topics | Total Duration (Hrs.) | Feedback Rating (out of 5) |
+|---|---|----|---|
 | PGP Certificate Program | Basic Statistics | 16 | 5 |
 | PGP Certificate Program | Python (Introduction, Data types, Control structure, Function, File handling, Numpy, Data Preprocessing, feature eng., Pandas, Sklearn, Seaborn, plotly, matplotlib) | 22 | 4.8 |
 | PGP Certificate Program | SQL & ETL | 20 | 4.7 |
