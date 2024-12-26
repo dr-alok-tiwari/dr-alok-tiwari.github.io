@@ -5,9 +5,12 @@
 🔍 **Passionate Researcher** - Artificial Intelligence in Healthcare 🌐  
 
 ###### [Dr. Alok Tiwari: Assistant Professor, Big Data Analytics, Goa Institute of Management, Goa, India](https://gim.ac.in/faculty/alok-tiwari)  
-###### Book an Appointment: [dr_alok_tiwari](https://topmate.io/dr_alok_tiwari) ###### Email: [shodhkarta.alok@gmail.com](mailto:shodhkarta.alok@gmail.com)  
-###### ORCID: [0000-0003-3605-8565](https://orcid.org/0000-0003-3605-8565?lang=en)  ###### GitHub: [dr-alok-tiwari](https://github.com/dr-alok-tiwari)  
-###### Google Scholar: [Profile](https://scholar.google.com/citations?user=jE6HZ0gAAAAJ&hl=en)  ###### LinkedIn: [dr-alok-tiwari](https://www.linkedin.com/in/dr-alok-tiwari/)  
+###### Book an Appointment: [dr_alok_tiwari](https://topmate.io/dr_alok_tiwari) 
+###### Email: [shodhkarta.alok@gmail.com](mailto:shodhkarta.alok@gmail.com)  
+###### ORCID: [0000-0003-3605-8565](https://orcid.org/0000-0003-3605-8565?lang=en)  
+###### GitHub: [dr-alok-tiwari](https://github.com/dr-alok-tiwari)  
+###### Google Scholar: [Profile](https://scholar.google.com/citations?user=jE6HZ0gAAAAJ&hl=en)  
+###### LinkedIn: [dr-alok-tiwari](https://www.linkedin.com/in/dr-alok-tiwari/)  
 
 ---
 
@@ -45,7 +48,7 @@ Unlocking healthcare insights with AI. I'm a researcher and Assistant Professor 
 
 ## Employment History:
 
-| Position            | Dates               | Institution                                      | Location           |
+| Position            | Dates               | Institution                                      | Location         |
 |---------------------|---------------------|------------------------------------------------|--------------------|
 | Assistant Professor | Jan 2024 - Present  | Goa Institute of Management                     | Goa, India         |
 | Assistant Professor | Feb 2023 - Dec 2023 | Atlas SkillTech University                      | Mumbai, India      |
@@ -58,9 +61,9 @@ Unlocking healthcare insights with AI. I'm a researcher and Assistant Professor 
 
 | Programmes          | Subjects/Topics                                                                                              | Total Hours | Feedback Rating (out of 5) |
 |---------------------|-------------------------------------------------------------------------------------------------------------|------------|---------------------------|
-| PGP Certificate     | Python (Intro, Numpy, Pandas, Sklearn, Seaborn, etc.)                                                      | 22         | 4.8                       |
-| PGP Certificate     | Big Data Engineering (Hadoop, Spark, etc.)                                                                 | 26         | 4.6                       |
-| MS in AI            | Computer Vision                                                                                           | 40         | 4.8                       |
+| PGP Certificate     | Python (Intro, Numpy, Pandas, Sklearn, Seaborn, etc.)                                                      | 150         | 4.8                       |
+| PGP Certificate     | Big Data Engineering (Hadoop, Spark, etc.)                                                                 | 100         | 4.6                       |
+| MS in AI            | Computer Vision                                                                                           | 80         | 4.8                       |
 
 ---
 
