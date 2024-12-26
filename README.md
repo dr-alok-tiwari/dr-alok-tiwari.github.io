@@ -5,13 +5,9 @@
 🔍 **Passionate Researcher** - Artificial Intelligence in Healthcare 🌐  
 
 ###### [Dr. Alok Tiwari: Assistant Professor, Big Data Analytics, Goa Institute of Management, Goa, India](https://gim.ac.in/faculty/alok-tiwari)  
-###### Book an Appointment: [dr_alok_tiwari](https://topmate.io/dr_alok_tiwari)
-
-###### Email: [shodhkarta.alok@gmail.com](mailto:shodhkarta.alok@gmail.com)  
-###### ORCID: [0000-0003-3605-8565](https://orcid.org/0000-0003-3605-8565?lang=en)  
-###### GitHub: [dr-alok-tiwari](https://github.com/dr-alok-tiwari)  
-###### Google Scholar: [Profile](https://scholar.google.com/citations?user=jE6HZ0gAAAAJ&hl=en)  
-###### LinkedIn: [dr-alok-tiwari](https://www.linkedin.com/in/dr-alok-tiwari/)  
+###### Book an Appointment: [dr_alok_tiwari](https://topmate.io/dr_alok_tiwari) ###### Email: [shodhkarta.alok@gmail.com](mailto:shodhkarta.alok@gmail.com)  
+###### ORCID: [0000-0003-3605-8565](https://orcid.org/0000-0003-3605-8565?lang=en)  ###### GitHub: [dr-alok-tiwari](https://github.com/dr-alok-tiwari)  
+###### Google Scholar: [Profile](https://scholar.google.com/citations?user=jE6HZ0gAAAAJ&hl=en)  ###### LinkedIn: [dr-alok-tiwari](https://www.linkedin.com/in/dr-alok-tiwari/)  
 
 ---
 
@@ -72,9 +68,11 @@ Unlocking healthcare insights with AI. I'm a researcher and Assistant Professor 
 
 | Degree  | Field                                           | Dates  | Institution                                                         | Location         | 
 |---------|-------------------------------------------------|--------|---------------------------------------------------------------------|------------------|
-| Ph.D.   | Biomedical Engineering                          | 2023   | Indian Institute of Technology (IIT-BHU)                           | Varanasi, India  |
+| Ph.D.   | Biomedical Engineering                          | 2023   | Indian Institute of Technology (IIT-BHU)                            | Varanasi, India  |
 | M.Tech. | Biomedical Engineering (Honors)                 | 2016   | NIT Kurukshetra                                                     | Haryana, India   |
 | B.Tech. | Electronics & Communication Engineering (Honors)| 2012   | IET Sitapur                                                         | Uttar Pradesh, India |
+| 12th    | Science                                         | 2012   | ADSVM Inter College Sitapur                                         | Uttar Pradesh, India |
+| 10th    | Science                                         | 2012   | ADSVM Inter College Sitapur                                         | Uttar Pradesh, India |
 
 ---
 
