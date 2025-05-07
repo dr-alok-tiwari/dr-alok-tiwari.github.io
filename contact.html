@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Dr. Alok Tiwari</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    .contact-container {
+      max-width: 700px;
+      margin: 3rem auto;
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-family: 'Roboto Serif', serif;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #5c6bc0;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #3f51b5;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #3949ab;
+    }
+  </style>
+</head>
+<body onload="AOS.init();">
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li class="active">Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-section" data-aos="fade-up">
+    <div class="contact-container">
+      <h2>📨 Get in Touch</h2>
+      <form action="https://formspree.io/f/mleqodkj" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="social-links">
+        <p>Or reach me through:</p>
+        <a href="mailto:shodhkarta.alok@gmail.com" target="_blank">Email</a>
+        <a href="https://github.com/dr-alok-tiwari" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/dr-alok-tiwari/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
