@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications - Dr. Alok Tiwari</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    .tabs {
+      display: flex;
+      gap: 1rem;
+      margin: 2rem 0;
+      justify-content: center;
+    }
+    .tab-button {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #5c6bc0;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .tab-button:hover, .tab-button.active {
+      background-color: #3949ab;
+    }
+    .tab-content {
+      display: none;
+      animation: fadein 0.5s;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .publication {
+      background: white;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .publication a {
+      color: #1a237e;
+      font-weight: bold;
+    }
+    @keyframes fadein {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body onload="AOS.init();">
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li class="active">Publications</li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-section" data-aos="fade-up">
+    <h1>📚 Publications</h1>
+
+    <div class="tabs">
+      <button class="tab-button active" onclick="switchTab('journals')">Journal Articles</button>
+      <button class="tab-button" onclick="switchTab('conferences')">Conferences</button>
+      <button class="tab-button" onclick="switchTab('books')">Book Chapters</button>
+    </div>
+
+    <div id="journals" class="tab-content active">
+      <div class="publication">
+        Cascaded model for weakly supervised segmentation of cardiac MRI. <br>
+        <a href="https://www.tandfonline.com/doi/abs/10.1080/02564602.2022.2055668" target="_blank">IETE Technical Review, 2023</a>
+      </div>
+      <div class="publication">
+        Technological advances in alternate drug discovery. <br>
+        <a href="https://www.abap.co.in/index.php/home/article/view/875" target="_blank">Current Trends in Biotechnology and Pharmacy, 2023</a>
+      </div>
+      <div class="publication">
+        Detection of Covid-19 infection using transfer learning. <br>
+        <a href="https://content.iospress.com/articles/technology-and-health-care/thc220114" target="_blank">Technology and Health Care, 2022</a>
+      </div>
+      <div class="publication">
+        Deep learning-based classification of chest X-rays. <br>
+        <a href="https://www.tandfonline.com/doi/full/10.1080/23311916.2022.2105559" target="_blank">Cogent Engineering, 2022</a>
+      </div>
+    </div>
+
+    <div id="conferences" class="tab-content">
+      <div class="publication">
+        Deep learning for brain stroke detection. <br>
+        ICBME, Singapore, 2019
+      </div>
+      <div class="publication">
+        Modified Pan-Tompkins algorithm for arrhythmia detection. <br>
+        BiTERM, IIT Delhi, 2016
+      </div>
+      <div class="publication">
+        Simulink-based model for arrhythmia detection. <br>
+        HTA School of Public Health, PGIMER, Chandigarh, 2016
+      </div>
+    </div>
+
+    <div id="books" class="tab-content">
+      <div class="publication">
+        Neuroimaging tools for blockage identification.<br>
+        <em>Springer Singapore, 2019</em>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      event.currentTarget.classList.add('active');
+    }
+  </script>
+</body>
+</html>
