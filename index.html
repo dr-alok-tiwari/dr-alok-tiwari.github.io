@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dr. Alok Tiwari</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
@@ -14,19 +15,20 @@
     <nav>
       <ul>
         <li class="active">About</li>
-        <li><a href="#">Publications</a></li>
-        <li><a href="#">Teaching</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Visual Insights</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="about-section" data-aos="fade-up">
     <div class="intro">
-      <div class="avatar"></div>
+      <div class="avatar">
+        <img src="assets/img/prof_pic.jpg" alt="Dr. Alok Tiwari" style="width: 120px; border-radius: 50%;" />
+      </div>
       <div class="intro-text">
         <h1>Hi, I’m Dr. Alok Tiwari</h1>
         <p class="title">Assistant Professor in Big Data Analytics at Goa Institute of Management</p>
@@ -48,10 +50,18 @@
         <p>Educating students on machine learning concepts</p>
       </div>
     </div>
-  </main>
 
-  <script>
-    AOS.init();
-  </script>
+    <footer style="margin-top: 3rem; text-align: center;">
+      <a href="mailto:shodhkarta.alok@gmail.com" title="Email">
+        <img src="assets/icons/email.svg" alt="Email" width="30" />
+      </a>
+      <a href="https://github.com/dr-alok-tiwari" target="_blank" title="GitHub">
+        <img src="assets/icons/github.svg" alt="GitHub" width="30" />
+      </a>
+      <a href="https://www.linkedin.com/in/dr-alok-tiwari/" target="_blank" title="LinkedIn">
+        <img src="assets/icons/linkedin.svg" alt="LinkedIn" width="30" />
+      </a>
+    </footer>
+  </main>
 </body>
 </html>
