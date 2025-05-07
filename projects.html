@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Dr. Alok Tiwari</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      justify-content: center;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #2e3a59;
+    }
+
+    .project-card p {
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card a {
+      text-decoration: none;
+      color: #3949ab;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body onload="AOS.init();">
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li class="active">Projects</li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-section" data-aos="fade-up">
+    <h1>🔬 Projects & Mentoring</h1>
+
+    <div class="projects-container">
+      <div class="project-card" data-aos="zoom-in">
+        <h3>AI in COVID-19 & Cardiac MRI</h3>
+        <p>Developed transfer learning and weakly supervised models for COVID-19 detection and LV segmentation.</p>
+        <a href="https://github.com/dr-alok-tiwari" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Give Goa - ERPNext Integration</h3>
+        <p>Created a payment gateway using ERPNext and WhatsApp integration to support local initiatives.</p>
+      </div>
+
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Sectoral Projects - PGDM-HCM</h3>
+        <p>Mentored 7 student projects on healthcare domain innovation and analytics implementation.</p>
+      </div>
+
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Summer Internship Mentoring</h3>
+        <p>Guided 15 PGDM students during their data-driven summer internship programs across healthcare and business domains.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
