@@ -120,6 +120,18 @@ body {
   background-color: #f4b942;
 }
 
+.card.green {
+  background-color: #66bb6a;
+}
+
+.card.purple {
+  background-color: #ab47bc;
+}
+
+.card.orange {
+  background-color: #ff7043;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .intro {
