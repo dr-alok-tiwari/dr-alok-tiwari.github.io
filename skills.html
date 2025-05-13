@@ -5,24 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skills - Dr. Alok Tiwari</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
   <style>
-    .chart-container {
+    .skills-container {
       display: flex;
       flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 2rem;
       justify-content: center;
-      gap: 2rem;
-      margin-top: 3rem;
     }
 
-    canvas {
-      max-width: 400px;
-      background: white;
-      padding: 1.5rem;
+    .skill-card {
+      background: #fff;
       border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+    }
+
+    .skill-card h3 {
+      margin-top: 0;
+      color: #2e3a59;
+    }
+
+    .skill-card ul {
+      padding-left: 1.2rem;
+    }
+
+    .skill-card li {
+      margin-bottom: 0.4rem;
     }
   </style>
 </head>
@@ -41,57 +59,66 @@
   </header>
 
   <main class="about-section" data-aos="fade-up">
-    <h1>🛠️ Skills</h1>
+    <h1>🛠️ Skills Overview</h1>
 
-    <div class="chart-container">
-      <!-- Radar Chart -->
-      <canvas id="radarChart" data-aos="zoom-in"></canvas>
+    <div class="skills-container">
+      <div class="skill-card" data-aos="zoom-in">
+        <h3>Areas of Expertise</h3>
+        <ul>
+          <li>AI in Healthcare</li>
+          <li>Data Science & Engineering</li>
+          <li>Computer Vision</li>
+          <li>Machine Learning & Deep Learning</li>
+          <li>Artificial Intelligence</li>
+        </ul>
+      </div>
 
-      <!-- Bar Chart -->
-      <canvas id="barChart" data-aos="zoom-in" data-aos-delay="150"></canvas>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Programming Languages</h3>
+        <ul>
+          <li>Python, R, C, MATLAB</li>
+          <li>SQL, NoSQL</li>
+          <li>LaTeX</li>
+        </ul>
+      </div>
+
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Libraries & Frameworks</h3>
+        <ul>
+          <li>PyTorch, TensorFlow, Keras</li>
+          <li>Scikit-learn, OpenCV, CUDA, CuDNN</li>
+          <li>NumPy, Pandas, Matplotlib, Seaborn</li>
+        </ul>
+      </div>
+
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Tools & Platforms</h3>
+        <ul>
+          <li>Git, GitHub, Jenkins, Docker</li>
+          <li>Azure, Databricks, SDLC, Ngrok</li>
+          <li>Tableau, MS Excel, PowerPoint</li>
+          <li>GPU Workstation, Param Shivay Supercomputer</li>
+        </ul>
+      </div>
+
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Databases</h3>
+        <ul>
+          <li>MySQL, RDBMS, HBase, MongoDB</li>
+          <li>Structured, Semi-Structured, Unstructured</li>
+        </ul>
+      </div>
+
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Strong written and verbal English</li>
+          <li>Leadership & Public Speaking</li>
+          <li>Discipline, Adaptability, Listening</li>
+          <li>Research Orientation & Teaching</li>
+        </ul>
+      </div>
     </div>
   </main>
-
-  <script>
-    // Radar Chart - Domains
-    const radarCtx = document.getElementById('radarChart');
-    new Chart(radarCtx, {
-      type: 'radar',
-      data: {
-        labels: ['AI in Healthcare', 'Data Science', 'Deep Learning', 'Data Engineering', 'Computer Vision', 'ML Algorithms'],
-        datasets: [{
-          label: 'Expertise Level (1–10)',
-          data: [9, 9, 8.5, 8, 8.5, 9],
-          backgroundColor: 'rgba(92, 107, 192, 0.4)',
-          borderColor: '#5c6bc0',
-          pointBackgroundColor: '#3949ab'
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: { legend: { position: 'top' } }
-      }
-    });
-
-    // Bar Chart - Tools & Languages
-    const barCtx = document.getElementById('barChart');
-    new Chart(barCtx, {
-      type: 'bar',
-      data: {
-        labels: ['Python', 'R', 'SQL', 'TensorFlow', 'PyTorch', 'Spark', 'Azure'],
-        datasets: [{
-          label: 'Proficiency Level (1–10)',
-          data: [9, 8, 8.5, 8.5, 8, 7.5, 7],
-          backgroundColor: '#f4b942'
-        }]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          y: { beginAtZero: true, max: 10 }
-        }
-      }
-    });
-  </script>
 </body>
 </html>
