@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education - Dr. Alok Tiwari</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    .education-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+      justify-content: center;
+      padding: 0 2rem;
+    }
+
+    .edu-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 320px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .edu-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+    }
+
+    .edu-card h3 {
+      margin-top: 0;
+      color: #2e3a59;
+    }
+
+    .edu-card p {
+      margin-bottom: 0.3rem;
+    }
+
+    .edu-card small {
+      color: #666;
+    }
+  </style>
+</head>
+<body onload="AOS.init();">
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="active">Education</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-section" data-aos="fade-up">
+    <h1>🎓 Education</h1>
+
+    <div class="education-container">
+      <div class="edu-card" data-aos="zoom-in">
+        <h3>Ph.D. in Biomedical Engineering</h3>
+        <p><strong>Indian Institute of Technology (IIT-BHU), Varanasi</strong></p>
+        <p>2016 – 2023</p>
+        <p><em>Thesis:</em> Transfer learning-based multiclass classification of COVID-19 using chest X-rays and weakly supervised model for cardiac MRI segmentation.</p>
+      </div>
+
+      <div class="edu-card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>M.Tech in Biomedical Engineering</h3>
+        <p><strong>NIT Kurukshetra, Haryana</strong></p>
+        <p>2014 – 2016</p>
+        <p><em>Thesis:</em> Detection of various cardiac arrhythmias using modified Pan-Tompkins algorithm and artificial neural network.</p>
+      </div>
+
+      <div class="edu-card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>B.Tech in Electronics & Communication</h3>
+        <p><strong>Gautam Buddha Technical University, Lucknow</strong></p>
+        <p>2008 – 2012</p>
+        <p><em>Project:</em> Anti-theft banking locker system connected with mobile number using GSM module.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
