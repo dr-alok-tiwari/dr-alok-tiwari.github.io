@@ -1,4 +1,4 @@
-# Dr. Alok Tiwari — Portfolio Redesign
+# Dr. Alok Tiwari — Portfolio 
 
 A polished, single-page academic and professional portfolio optimized for GitHub Pages.
 
