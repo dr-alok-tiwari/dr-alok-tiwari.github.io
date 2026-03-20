@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dr. Alok Tiwari — Assistant Professor at Goa Institute of Management. AI researcher, healthcare AI expert, educator, and applied analytics mentor bridging academia and industry." />
+  <meta name="theme-color" content="#050d18" />
+  <meta property="og:title" content="Dr. Alok Tiwari | AI · Healthcare Analytics · Data Science" />
+  <meta property="og:description" content="AI researcher and educator at GIM Goa. PhD IIT(BHU). Healthcare AI, XAI, machine learning, and management education." />
+  <title>Dr. Alok Tiwari | AI · Healthcare Analytics · Educator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <canvas class="noise-canvas" id="noiseCanvas"></canvas>
+
+  <!-- NAV -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">
+        <span class="brand-glyph">AT</span>
+        <span class="brand-name">Dr. Alok Tiwari</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#teaching" class="nav-link">Teaching</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero-section" id="top">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+      <div class="hero-orb hero-orb--3"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-left fade-up">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Assistant Professor &nbsp;·&nbsp; Goa Institute of Management</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="title-line">Building</span>
+            <span class="title-line title-line--italic">responsible AI</span>
+            <span class="title-line">for healthcare,</span>
+            <span class="title-line">education &</span>
+            <span class="title-accent">decision science.</span>
+          </h1>
+          <p class="hero-bio">
+            PhD · IIT (BHU) Varanasi · Biomedical Engineering<br>
+            Working at the intersection of machine learning, medical imaging,<br>
+            explainable AI, and management-focused data science.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn--primary">
+              <span>Let's collaborate</span>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#publications" class="btn btn--ghost">View publications</a>
+          </div>
+          <div class="hero-socials">
+            <a href="mailto:shodhkarta.alok@gmail.com" class="social-pill" title="Email">
+              <img src="assets/icons/email.svg" alt="Email"><span>Email</span>
+            </a>
+            <a href="https://github.com/dr-alok-tiwari" target="_blank" rel="noreferrer" class="social-pill">
+              <img src="assets/icons/github.svg" alt="GitHub"><span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/dr-alok-tiwari/" target="_blank" rel="noreferrer" class="social-pill">
+              <img src="assets/icons/linkedin.svg" alt="LinkedIn"><span>LinkedIn</span>
+            </a>
+            <a href="https://scholar.google.com/citations?hl=en&user=jE6HZ0gAAAAJ" target="_blank" rel="noreferrer" class="social-pill">
+              <img src="assets/icons/google-scholar.svg" alt="Scholar"><span>Scholar</span>
+            </a>
+            <a href="https://orcid.org/0000-0003-3605-8565" target="_blank" rel="noreferrer" class="social-pill">
+              <img src="assets/icons/orcid.svg" alt="ORCID"><span>ORCID</span>
+            </a>
+            <a href="https://www.researchgate.net/profile/Alok-Tiwari-5" target="_blank" rel="noreferrer" class="social-pill">
+              <img src="assets/icons/researchgate.svg" alt="ResearchGate"><span>ResearchGate</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right fade-up fade-up--delay">
+          <div class="profile-shell">
+            <div class="profile-ring"></div>
+            <div class="profile-img-wrap">
+              <img src="assets/img/prof_pic.jpg" alt="Dr. Alok Tiwari" class="profile-img" />
+            </div>
+            <div class="profile-tag profile-tag--1"><span class="tag-icon">🔬</span><span>Healthcare AI</span></div>
+            <div class="profile-tag profile-tag--2"><span class="tag-icon">🧠</span><span>XAI Research</span></div>
+            <div class="profile-tag profile-tag--3"><span class="tag-icon">📊</span><span>MLOps</span></div>
+          </div>
+          <div class="stat-strip">
+            <div class="stat-item">
+              <span class="stat-num" data-target="7">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Publications</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Yrs. Experience</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="15">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">FDPs &amp; MDPs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-band">
+      <div class="marquee-track">
+        <span>Healthcare AI</span><span class="marquee-dot">◆</span>
+        <span>Medical Imaging</span><span class="marquee-dot">◆</span>
+        <span>Explainable AI</span><span class="marquee-dot">◆</span>
+        <span>Computer Vision</span><span class="marquee-dot">◆</span>
+        <span>Deep Learning</span><span class="marquee-dot">◆</span>
+        <span>MLOps</span><span class="marquee-dot">◆</span>
+        <span>Data Science</span><span class="marquee-dot">◆</span>
+        <span>Management Analytics</span><span class="marquee-dot">◆</span>
+        <span>Faculty Development</span><span class="marquee-dot">◆</span>
+        <span>Healthcare AI</span><span class="marquee-dot">◆</span>
+        <span>Medical Imaging</span><span class="marquee-dot">◆</span>
+        <span>Explainable AI</span><span class="marquee-dot">◆</span>
+        <span>Computer Vision</span><span class="marquee-dot">◆</span>
+        <span>Deep Learning</span><span class="marquee-dot">◆</span>
+        <span>MLOps</span><span class="marquee-dot">◆</span>
+        <span>Data Science</span><span class="marquee-dot">◆</span>
+        <span>Management Analytics</span><span class="marquee-dot">◆</span>
+        <span>Faculty Development</span><span class="marquee-dot">◆</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-left">
+            <p class="section-kicker fade-up">01 — About</p>
+            <h2 class="section-title fade-up">Engineering depth.<br><em>Human purpose.</em></h2>
+            <div class="about-body fade-up">
+              <p>I hold a <strong>PhD in Biomedical Engineering from IIT (BHU), Varanasi</strong>, where my research examined transfer learning for COVID-19 classification and weakly supervised cardiac MRI segmentation. My MTech is from NIT Kurukshetra, my BTech from GBTU Lucknow.</p>
+              <p>Today I serve as <strong>Assistant Professor, Big Data Analytics</strong> at <strong>Goa Institute of Management</strong>, designing and delivering analytics, AI, and healthcare-focused courses for the next generation of data-informed managers.</p>
+              <p>My work sits at the crossroads of responsible AI system design, clinical decision support, and management education — with a constant thread of translating rigorous research into real-world action.</p>
+            </div>
+            <div class="tag-cloud fade-up">
+              <span class="tag">AI in Healthcare</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Healthcare Analytics</span>
+              <span class="tag">MLOps</span>
+              <span class="tag">Explainable AI</span>
+              <span class="tag">Faculty Development</span>
+              <span class="tag">GenAI</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Transfer Learning</span>
+            </div>
+          </div>
+          <div class="about-right fade-up fade-up--delay">
+            <div class="edu-card glass">
+              <div class="edu-icon">🎓</div>
+              <div>
+                <p class="edu-degree">PhD · Biomedical Engineering</p>
+                <p class="edu-inst">IIT (BHU), Varanasi</p>
+                <p class="edu-note">Transfer learning · Cardiac MRI · COVID-19 AI</p>
+              </div>
+            </div>
+            <div class="edu-card glass">
+              <div class="edu-icon">🔬</div>
+              <div>
+                <p class="edu-degree">MTech · Biomedical Engineering</p>
+                <p class="edu-inst">NIT Kurukshetra</p>
+                <p class="edu-note">Signal processing · Medical imaging</p>
+              </div>
+            </div>
+            <div class="edu-card glass">
+              <div class="edu-icon">⚡</div>
+              <div>
+                <p class="edu-degree">BTech · Electronics &amp; Communication</p>
+                <p class="edu-inst">GBTU, Lucknow</p>
+                <p class="edu-note">ECE foundations · Digital systems</p>
+              </div>
+            </div>
+            <div class="about-quote glass">
+              <p>"Bridging the gap between AI theory and healthcare impact — one algorithm, one classroom, one decision at a time."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="section section--dark" id="research">
+      <div class="container">
+        <div class="section-head fade-up">
+          <p class="section-kicker">02 — Research</p>
+          <h2 class="section-title">Core areas of inquiry</h2>
+          <p class="section-sub">Six interconnected domains shaping responsible, impactful AI systems.</p>
+        </div>
+        <div class="research-grid">
+          <article class="research-card fade-up">
+            <div class="rc-number">01</div>
+            <div class="rc-icon">🫁</div>
+            <h3>Medical Image Analysis</h3>
+            <p>Deep learning for MRI, chest X-ray, and clinical imaging interpretation. Cardiac segmentation and respiratory disease detection.</p>
+            <div class="rc-tags"><span>CNN</span><span>U-Net</span><span>ResNet</span></div>
+          </article>
+          <article class="research-card fade-up">
+            <div class="rc-number">02</div>
+            <div class="rc-icon">🔍</div>
+            <h3>Explainable &amp; Ethical AI</h3>
+            <p>Designing transparent, robust AI systems that clinicians and managers can trust — with accountability and fairness baked in.</p>
+            <div class="rc-tags"><span>XAI</span><span>LIME</span><span>SHAP</span></div>
+          </article>
+          <article class="research-card fade-up">
+            <div class="rc-number">03</div>
+            <div class="rc-icon">📈</div>
+            <h3>Applied Data Science</h3>
+            <p>Connecting statistical learning and AI workflows to healthcare, business, and policy questions where real decisions are made.</p>
+            <div class="rc-tags"><span>Sklearn</span><span>Statsmodels</span><span>Python</span></div>
+          </article>
+          <article class="research-card fade-up">
+            <div class="rc-number">04</div>
+            <div class="rc-icon">🧑‍🏫</div>
+            <h3>Pedagogy &amp; Learning Innovation</h3>
+            <p>Leveraging GenAI and analytics-enabled teaching methods to improve learning design, faculty development, and management education.</p>
+            <div class="rc-tags"><span>GenAI</span><span>EdTech</span><span>FDPs</span></div>
+          </article>
+          <article class="research-card fade-up">
+            <div class="rc-number">05</div>
+            <div class="rc-icon">🏭</div>
+            <h3>Industry-Oriented Analytics</h3>
+            <p>Executive and practitioner-facing training that converts analytics theory into tangible organizational decision value at scale.</p>
+            <div class="rc-tags"><span>MDPs</span><span>BI Tools</span><span>SQL</span></div>
+          </article>
+          <article class="research-card fade-up">
+            <div class="rc-number">06</div>
+            <div class="rc-icon">⚙️</div>
+            <h3>Production-Ready AI Workflows</h3>
+            <p>Integrating cloud, reproducibility, CI/CD, and MLOps thinking into every data science project — from notebook to deployment.</p>
+            <div class="rc-tags"><span>Docker</span><span>MLflow</span><span>Cloud</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head fade-up">
+          <p class="section-kicker">03 — Experience</p>
+          <h2 class="section-title">Academic &amp; professional<br><em>trajectory</em></h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-spine"></div>
+          <article class="tl-item fade-up">
+            <div class="tl-dot tl-dot--active"><span></span></div>
+            <div class="tl-card glass">
+              <div class="tl-header">
+                <div>
+                  <span class="tl-period">2024 – Present</span>
+                  <h3>Assistant Professor, Big Data Analytics</h3>
+                  <p class="tl-place"><span class="place-badge">🎓 Academic</span> Goa Institute of Management, Goa</p>
+                </div>
+                <div class="tl-badge tl-badge--current">Current</div>
+              </div>
+              <p>Teaching healthcare analytics, AI-oriented management courses, MLOps, logical reasoning, AR/VR, sports analytics, and emerging technology modules for PGDM learners. Active in FDP and MDP delivery.</p>
+              <div class="tl-tags"><span>Healthcare Analytics</span><span>MLOps</span><span>Sports Analytics</span><span>AI for Managers</span></div>
+            </div>
+          </article>
+          <article class="tl-item fade-up">
+            <div class="tl-dot"><span></span></div>
+            <div class="tl-card glass">
+              <div class="tl-header">
+                <div>
+                  <span class="tl-period">2023</span>
+                  <h3>Assistant Professor</h3>
+                  <p class="tl-place"><span class="place-badge">🎓 Academic</span> ATLAS SkillTech University, Mumbai</p>
+                </div>
+              </div>
+              <p>Taught statistics, calculus, industrial analytics, and technology-oriented interdisciplinary courses. Contributed to curriculum design and student mentorship.</p>
+              <div class="tl-tags"><span>Statistics</span><span>Calculus</span><span>Industrial Analytics</span></div>
+            </div>
+          </article>
+          <article class="tl-item fade-up">
+            <div class="tl-dot"><span></span></div>
+            <div class="tl-card glass">
+              <div class="tl-header">
+                <div>
+                  <span class="tl-period">2022 – 2023</span>
+                  <h3>Faculty · Data Engineering &amp; AI</h3>
+                  <p class="tl-place"><span class="place-badge">🏢 Industry</span> uGDX / INSOFE, Hyderabad</p>
+                </div>
+              </div>
+              <p>Hands-on delivery of Python, SQL, machine learning, computer vision, cloud workflows, DevOps fundamentals, and big data tools to professional and graduate cohorts.</p>
+              <div class="tl-tags"><span>Python</span><span>SQL</span><span>Computer Vision</span><span>Cloud</span><span>Big Data</span></div>
+            </div>
+          </article>
+          <article class="tl-item fade-up">
+            <div class="tl-dot"><span></span></div>
+            <div class="tl-card glass">
+              <div class="tl-header">
+                <div>
+                  <span class="tl-period">2015 – 2021</span>
+                  <h3>PhD Research · Biomedical Engineering</h3>
+                  <p class="tl-place"><span class="place-badge">🔬 Research</span> IIT (BHU), Varanasi</p>
+                </div>
+              </div>
+              <p>Doctoral research on transfer learning for COVID-19 chest X-ray classification and weakly supervised segmentation for cardiac MRI. Multiple journal and conference publications.</p>
+              <div class="tl-tags"><span>Deep Learning</span><span>Medical Imaging</span><span>Transfer Learning</span><span>Cardiac MRI</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section section--dark" id="publications">
+      <div class="container">
+        <div class="section-head fade-up">
+          <p class="section-kicker">04 — Publications</p>
+          <h2 class="section-title">Selected scholarly work</h2>
+          <p class="section-sub">Peer-reviewed journals, international conferences, and book chapters.</p>
+        </div>
+        <div class="pub-filter-row fade-up">
+          <button class="pub-filter active" data-filter="all">All</button>
+          <button class="pub-filter" data-filter="journal">Journal Articles</button>
+          <button class="pub-filter" data-filter="conference">Conferences</button>
+          <button class="pub-filter" data-filter="chapter">Book Chapters</button>
+        </div>
+        <div class="pub-list" id="pubList">
+          <article class="pub-item fade-up" data-type="journal">
+            <div class="pub-meta">
+              <span class="pub-badge pub-badge--journal">Journal</span>
+              <span class="pub-year">2023</span>
+            </div>
+            <div class="pub-body">
+              <h3>Cascaded model for weakly supervised segmentation of cardiac MRI</h3>
+              <p class="pub-venue">IETE Technical Review · Taylor &amp; Francis</p>
+              <p class="pub-abstract">Novel cascaded deep learning architecture for weakly supervised cardiac MRI segmentation with minimal annotation overhead — advancing automated cardiac diagnostics.</p>
+            </div>
+            <a href="https://www.tandfonline.com/doi/abs/10.1080/02564602.2022.2055668" target="_blank" rel="noreferrer" class="pub-link">View paper <svg width="12" height="12" fill="none" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="pub-item fade-up" data-type="journal">
+            <div class="pub-meta">
+              <span class="pub-badge pub-badge--journal">Journal</span>
+              <span class="pub-year">2023</span>
+            </div>
+            <div class="pub-body">
+              <h3>Technological advances in alternate drug discovery</h3>
+              <p class="pub-venue">Current Trends in Biotechnology and Pharmacy</p>
+              <p class="pub-abstract">Comprehensive review of emerging computational and AI-driven approaches to drug discovery, virtual screening, and ML-guided synthesis pathways.</p>
+            </div>
+            <a href="https://www.abap.co.in/index.php/home/article/view/875" target="_blank" rel="noreferrer" class="pub-link">View paper <svg width="12" height="12" fill="none" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="pub-item fade-up" data-type="journal">
+            <div class="pub-meta">
+              <span class="pub-badge pub-badge--journal">Journal</span>
+              <span class="pub-year">2022</span>
+            </div>
+            <div class="pub-body">
+              <h3>Detection of COVID-19 infection using transfer learning</h3>
+              <p class="pub-venue">Technology and Health Care · IOS Press</p>
+              <p class="pub-abstract">Transfer learning framework for robust COVID-19 detection from chest radiographs. High sensitivity and specificity across multiple pretrained architectures.</p>
+            </div>
+            <a href="https://content.iospress.com/articles/technology-and-health-care/thc220114" target="_blank" rel="noreferrer" class="pub-link">View paper <svg width="12" height="12" fill="none" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="pub-item fade-up" data-type="journal">
+            <div class="pub-meta">
+              <span class="pub-badge pub-badge--journal">Journal</span>
+              <span class="pub-year">2022</span>
+            </div>
+            <div class="pub-body">
+              <h3>Deep learning-based classification of chest X-rays</h3>
+              <p class="pub-venue">Cogent Engineering · Taylor &amp; Francis</p>
+              <p class="pub-abstract">Systematic deep learning pipeline for multi-class chest X-ray classification, benchmarking VGG, DenseNet, and Inception architectures across pathology categories.</p>
+            </div>
+            <a href="https://www.tandfonline.com/doi/full/10.1080/23311916.2022.2105559" target="_blank" rel="noreferrer" class="pub-link">View paper <svg width="12" height="12" fill="none" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="pub-item fade-up" data-type="conference">
+            <div class="pub-meta">
+              <span class="pub-badge pub-badge--conf">Conference</span>
+              <span class="pub-year">2019</span>
+            </div>
+            <div class="pub-body">
+              <h3>Deep learning for brain stroke detection</h3>
+              <p class="pub-venue">ICBME 2019 · Singapore</p>
+              <p class="pub-abstract">CNN-based detection of ischemic brain stroke from neuroimaging data, with clinical validation insights and real-time screening applicability.</p>
+            </div>
+          </article>
+          <article class="pub-item fade-up" data-type="conference">
+            <div class="pub-meta">
+              <span class="pub-badge pub-badge--conf">Conference</span>
+              <span class="pub-year">2016</span>
+            </div>
+            <div class="pub-body">
+              <h3>Modified Pan-Tompkins algorithm for arrhythmia detection</h3>
+              <p class="pub-venue">BiTERM · IIT Delhi</p>
+              <p class="pub-abstract">Optimized QRS-complex detection algorithm improving arrhythmia identification accuracy under noisy ECG signal conditions.</p>
+            </div>
+          </article>
+          <article class="pub-item fade-up" data-type="chapter">
+            <div class="pub-meta">
+              <span class="pub-badge pub-badge--chapter">Book Chapter</span>
+              <span class="pub-year">2019</span>
+            </div>
+            <div class="pub-body">
+              <h3>Neuroimaging tools for blockage identification</h3>
+              <p class="pub-venue">Springer Singapore</p>
+              <p class="pub-abstract">Survey of computational neuroimaging tools and pipelines for vascular blockage detection, with emphasis on deep learning integration.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEACHING -->
+    <section class="section" id="teaching">
+      <div class="container">
+        <div class="section-head fade-up">
+          <p class="section-kicker">05 — Teaching</p>
+          <h2 class="section-title">From classroom to<br><em>boardroom</em></h2>
+          <p class="section-sub">Bridging rigorous analytics education with real-world management relevance.</p>
+        </div>
+        <div class="teaching-grid">
+          <div class="teaching-col fade-up">
+            <div class="teaching-card glass">
+              <div class="tc-header"><span class="tc-icon">📚</span><h3>Academic Courses</h3></div>
+              <ul class="course-list">
+                <li><span class="course-dot"></span><div><strong>Healthcare Analytics</strong><span>AI applications in clinical decision-making</span></div></li>
+                <li><span class="course-dot"></span><div><strong>Sports Analytics</strong><span>Data-driven performance analysis</span></div></li>
+                <li><span class="course-dot"></span><div><strong>MLOps Fundamentals</strong><span>Production-ready ML pipelines</span></div></li>
+                <li><span class="course-dot"></span><div><strong>Operations Strategy in the AI Era</strong><span>AI-augmented operational decision-making</span></div></li>
+                <li><span class="course-dot"></span><div><strong>Logical Reasoning &amp; Critical Thinking</strong><span>Structured analytical frameworks</span></div></li>
+                <li><span class="course-dot"></span><div><strong>AR/VR &amp; Emerging Tech for Management</strong><span>Immersive technologies in business contexts</span></div></li>
+              </ul>
+            </div>
+          </div>
+          <div class="teaching-col fade-up fade-up--delay">
+            <div class="teaching-card glass">
+              <div class="tc-header"><span class="tc-icon">🏛️</span><h3>FDPs &amp; MDPs</h3></div>
+              <ul class="course-list">
+                <li><span class="course-dot course-dot--gold"></span><div><strong>GenAI &amp; Pedagogical Innovation</strong><span>Faculty development on AI-integrated teaching</span></div></li>
+                <li><span class="course-dot course-dot--gold"></span><div><strong>AI for Railways &amp; Applied Analytics</strong><span>Industry MDP for rail sector professionals</span></div></li>
+                <li><span class="course-dot course-dot--gold"></span><div><strong>Data Visualization &amp; Decision-Making</strong><span>Workshops for analytics practitioners</span></div></li>
+                <li><span class="course-dot course-dot--gold"></span><div><strong>Corporate &amp; Executive AI Learning</strong><span>Analytics fluency for senior managers</span></div></li>
+                <li><span class="course-dot course-dot--gold"></span><div><strong>Hands-On Tool Sessions</strong><span>Python, Power BI, SQL for practitioners</span></div></li>
+              </ul>
+            </div>
+            <div class="teaching-highlight glass">
+              <p class="th-label">Teaching philosophy</p>
+              <p class="th-quote">"Every technical concept taught to a manager must arrive with a decision they can make, or it is not yet finished."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--dark" id="projects">
+      <div class="container">
+        <div class="section-head fade-up">
+          <p class="section-kicker">06 — Projects</p>
+          <h2 class="section-title">Applied work beyond<br><em>the classroom</em></h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card fade-up project-card--featured">
+            <div class="pc-accent"></div>
+            <div class="pc-icon">🫀</div>
+            <h3>Cardiac MRI Segmentation</h3>
+            <p>Weakly supervised cascaded deep learning pipeline for automated cardiac structure segmentation from MRI sequences — reducing annotation burden for clinical deployment.</p>
+            <div class="pc-stack"><span>PyTorch</span><span>U-Net</span><span>DICOM</span><span>Weakly Supervised</span></div>
+          </article>
+          <article class="project-card fade-up">
+            <div class="pc-accent"></div>
+            <div class="pc-icon">🦠</div>
+            <h3>COVID-19 Chest X-Ray Classifier</h3>
+            <p>Transfer learning framework for multi-class respiratory disease detection from chest radiographs. Published in IOS Press Technology and Health Care.</p>
+            <div class="pc-stack"><span>TensorFlow</span><span>ResNet</span><span>DenseNet</span></div>
+          </article>
+          <article class="project-card fade-up">
+            <div class="pc-accent"></div>
+            <div class="pc-icon">🧠</div>
+            <h3>Brain Stroke Detection</h3>
+            <p>CNN-based detection of ischemic stroke from neuroimaging data. Presented at ICBME 2019, Singapore.</p>
+            <div class="pc-stack"><span>Keras</span><span>MRI/CT</span><span>Grad-CAM</span></div>
+          </article>
+          <article class="project-card fade-up">
+            <div class="pc-accent"></div>
+            <div class="pc-icon">📡</div>
+            <h3>Arrhythmia Detection System</h3>
+            <p>Modified Pan-Tompkins QRS detection with improved sensitivity under noisy ECG conditions. Presented at BiTERM, IIT Delhi.</p>
+            <div class="pc-stack"><span>MATLAB</span><span>Signal Processing</span><span>ECG</span></div>
+          </article>
+          <article class="project-card fade-up">
+            <div class="pc-accent"></div>
+            <div class="pc-icon">🎓</div>
+            <h3>GenAI-Enabled Teaching Frameworks</h3>
+            <p>Designed FDP curricula integrating generative AI tools into pedagogy — helping faculty reimagine course delivery, assessment, and learner engagement.</p>
+            <div class="pc-stack"><span>GenAI</span><span>LLMs</span><span>EdTech</span></div>
+          </article>
+          <article class="project-card fade-up">
+            <div class="pc-accent"></div>
+            <div class="pc-icon">🏭</div>
+            <h3>Industry Analytics Pipelines</h3>
+            <p>End-to-end data engineering and analytics workflows for MDP participants covering Python, SQL, Spark, Docker, and cloud orchestration.</p>
+            <div class="pc-stack"><span>Python</span><span>Spark</span><span>Docker</span><span>AWS</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head fade-up">
+          <p class="section-kicker">07 — Skills &amp; Tools</p>
+          <h2 class="section-title">Technical depth,<br><em>applied breadth</em></h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group fade-up">
+            <h4 class="sg-label">AI &amp; Machine Learning</h4>
+            <div class="skill-chips"><span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span><span>XGBoost</span><span>OpenCV</span><span>Hugging Face</span></div>
+          </div>
+          <div class="skill-group fade-up">
+            <h4 class="sg-label">Data Science &amp; Analytics</h4>
+            <div class="skill-chips"><span>Python</span><span>R</span><span>SQL</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Power BI</span></div>
+          </div>
+          <div class="skill-group fade-up">
+            <h4 class="sg-label">MLOps &amp; Engineering</h4>
+            <div class="skill-chips"><span>Docker</span><span>MLflow</span><span>Git</span><span>CI/CD</span><span>AWS</span><span>GCP</span><span>Apache Spark</span></div>
+          </div>
+          <div class="skill-group fade-up">
+            <h4 class="sg-label">Domain &amp; Research</h4>
+            <div class="skill-chips"><span>Medical Imaging</span><span>DICOM</span><span>XAI</span><span>Transfer Learning</span><span>NLP</span><span>Healthcare Analytics</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--dark contact-section" id="contact">
+      <div class="hero-orb hero-orb--2" style="bottom:5%;right:0;top:auto;left:auto;"></div>
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-left fade-up">
+            <p class="section-kicker">08 — Contact</p>
+            <h2 class="section-title">Open to meaningful<br><em>conversations</em></h2>
+            <p class="contact-desc">Whether you're looking to collaborate on research, invite me for a talk, discuss faculty opportunities, co-design an executive program, or explore applied AI consulting — I'd love to hear from you.</p>
+            <div class="contact-channels">
+              <a href="mailto:shodhkarta.alok@gmail.com" class="contact-channel">
+                <div class="cc-icon">✉️</div>
+                <div><p class="cc-label">Email</p><p class="cc-val">shodhkarta.alok@gmail.com</p></div>
+              </a>
+              <a href="tel:+919918450007" class="contact-channel">
+                <div class="cc-icon">📞</div>
+                <div><p class="cc-label">Phone</p><p class="cc-val">+91 99184 50007</p></div>
+              </a>
+              <a href="https://www.linkedin.com/in/dr-alok-tiwari/" target="_blank" rel="noreferrer" class="contact-channel">
+                <div class="cc-icon">💼</div>
+                <div><p class="cc-label">LinkedIn</p><p class="cc-val">dr-alok-tiwari</p></div>
+              </a>
+              <a href="https://github.com/dr-alok-tiwari" target="_blank" rel="noreferrer" class="contact-channel">
+                <div class="cc-icon">💻</div>
+                <div><p class="cc-label">GitHub</p><p class="cc-val">dr-alok-tiwari</p></div>
+              </a>
+            </div>
+          </div>
+          <div class="contact-right fade-up fade-up--delay">
+            <form class="contact-form glass" action="https://formspree.io/f/xanojdva" method="POST">
+              <h3>Send a message</h3>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="_replyto" placeholder="your@email.com" required>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What's this about?">
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your inquiry, opportunity, or idea…" required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">
+                <span>Send message</span>
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="brand-glyph brand-glyph--sm">AT</span>
+        <p>© <span id="year"></span> Dr. Alok Tiwari. Designed for academic, research &amp; applied AI visibility.</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/dr-alok-tiwari" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/dr-alok-tiwari/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=jE6HZ0gAAAAJ" target="_blank" rel="noreferrer">Scholar</a>
+        <a href="#top" class="back-top">↑ Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
