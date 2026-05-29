@@ -141,6 +141,76 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
+  // ── TEACHING, COURSES & MDP PORTFOLIO UPDATE ──
+  (function updateTeachingPortfolio() {
+    const teachingCards = document.querySelectorAll('#teaching .teaching-card');
+    if (!teachingCards.length) return;
+
+    const academicCard = Array.from(teachingCards).find(card =>
+      card.querySelector('h3')?.textContent.trim().toLowerCase().includes('academic')
+    );
+    const mdpCard = Array.from(teachingCards).find(card =>
+      card.querySelector('h3')?.textContent.trim().toLowerCase().includes('fdps') ||
+      card.querySelector('h3')?.textContent.trim().toLowerCase().includes('mdps')
+    );
+
+    const academicCourses = [
+      ['Storytelling using Data Visualization', 'For PGDM-BDA students · data storytelling, dashboard thinking, visual analytics, and business communication'],
+      ['LRCT', 'For PGDM-BDA students · logical reasoning, critical thinking, arguments, decisions, and ethical reasoning'],
+      ['MLOps', 'For PGDM-BDA students · production ML workflows, experiment tracking, deployment readiness, and responsible model operations'],
+      ['Sports Analytics', 'For PGDM-BDA students · performance analytics, player/team metrics, scouting logic, and data-driven sports decisions'],
+      ['Healthcare Analytics', 'For PGDM-HCM students · clinical, operational, public-health, and healthcare decision analytics'],
+      ['Intelligent Research: AI Applications & Techniques', 'For FPM students · AI-assisted literature review, research design, academic writing, and responsible scholarly workflows'],
+      ['Calculus', 'For BTech students · limits, derivatives, integrals, optimization, and engineering applications'],
+      ['Machine Learning', 'For Data Engineering certification courses · supervised/unsupervised learning, evaluation, and applied ML pipelines'],
+      ['Statistics', 'For Data Engineering certification courses · probability, inference, hypothesis testing, regression, and analytics foundations'],
+      ['Deep Learning', 'For Data Engineering certification courses · neural networks, CNNs, transfer learning, and applied model development'],
+      ['NLP', 'For Data Engineering certification courses · text preprocessing, embeddings, transformers, and language analytics'],
+      ['DevOps', 'For Data Engineering certification courses · Git, CI/CD, containerization, deployment, and engineering workflows'],
+      ['MLOps', 'For Data Engineering certification courses · ML lifecycle, reproducibility, monitoring, MLflow, Docker, and deployment pipelines'],
+      ['ETL/SQL', 'For Data Engineering certification courses · data extraction, transformation, loading, database querying, and pipeline design'],
+      ['Python and R Programming', 'For Data Engineering certification courses · programming foundations, analytics scripting, data manipulation, and reproducible analysis']
+    ];
+
+    const mdpPrograms = [
+      ['Gen AI for Executive Management', 'MDP for AJNIF MBA Graduates · executive AI literacy, managerial decision-making, productivity workflows, governance, and strategic adoption'],
+      ['Gen AI — Classroom to Career', 'MDP/workshop for UG students across Government Institutes of Goa · employability, responsible prompting, career readiness, and AI-enabled learning'],
+      ['GenAI & Pedagogical Innovation', 'Faculty development on AI-integrated teaching, assessment redesign, classroom productivity, and responsible academic use'],
+      ['AI for Railways & Applied Analytics', 'Industry MDP for rail sector professionals focused on analytics opportunities, process improvement, and AI adoption'],
+      ['Data Visualization & Decision-Making', 'Workshops for analytics practitioners using dashboards, visual reasoning, and management-oriented data communication'],
+      ['Corporate & Executive AI Learning', 'Analytics and AI fluency for senior managers, functional leaders, and decision-makers'],
+      ['Hands-On Tool Sessions', 'Applied sessions on Python, Power BI, SQL, no-code AI tools, and analytics workflows for practitioners']
+    ];
+
+    function buildList(items, dotClass = '') {
+      return items.map(([title, description]) => `
+        <li>
+          <span class="course-dot ${dotClass}"></span>
+          <div><strong>${title}</strong><span>${description}</span></div>
+        </li>
+      `).join('');
+    }
+
+    if (academicCard) {
+      const header = academicCard.querySelector('.tc-header h3');
+      const list = academicCard.querySelector('.course-list');
+      if (header) header.textContent = 'Academic Courses by Audience';
+      if (list) list.innerHTML = buildList(academicCourses);
+    }
+
+    if (mdpCard) {
+      const header = mdpCard.querySelector('.tc-header h3');
+      const list = mdpCard.querySelector('.course-list');
+      if (header) header.textContent = 'FDPs, MDPs & Outreach Programs';
+      if (list) list.innerHTML = buildList(mdpPrograms, 'course-dot--gold');
+    }
+
+    const sectionSub = document.querySelector('#teaching .section-sub');
+    if (sectionSub) {
+      sectionSub.textContent = 'Audience-specific courses, executive MDPs, faculty development programs, and applied AI learning experiences across management, healthcare, engineering, research, and data engineering.';
+    }
+  })();
+
   // ── SCROLL REVEAL ──
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
