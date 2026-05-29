@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('noiseCanvas');
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
-    let animId;
 
     function resize() {
       canvas.width = window.innerWidth;
@@ -21,16 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function drawNoise() {
-      const w = canvas.width, h = canvas.height;
+      const w = canvas.width;
+      const h = canvas.height;
       const imgData = ctx.createImageData(w, h);
       const data = imgData.data;
       for (let i = 0; i < data.length; i += 4) {
         const v = Math.random() * 255;
-        data[i] = data[i+1] = data[i+2] = v;
-        data[i+3] = 18;
+        data[i] = data[i + 1] = data[i + 2] = v;
+        data[i + 3] = 18;
       }
       ctx.putImageData(imgData, 0, 0);
-      animId = requestAnimationFrame(drawNoise);
+      requestAnimationFrame(drawNoise);
     }
 
     resize();
@@ -49,13 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── MOBILE NAV ──
   const menuToggle = document.getElementById('menuToggle');
-  const siteNav    = document.getElementById('siteNav');
+  const siteNav = document.getElementById('siteNav');
   if (menuToggle && siteNav) {
     menuToggle.addEventListener('click', () => {
       const open = siteNav.classList.toggle('is-open');
       menuToggle.classList.toggle('open', open);
       menuToggle.setAttribute('aria-expanded', String(open));
     });
+
     siteNav.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', () => {
         siteNav.classList.remove('is-open');
@@ -151,13 +152,14 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     const mdpCard = Array.from(teachingCards).find(card =>
       card.querySelector('h3')?.textContent.trim().toLowerCase().includes('fdps') ||
-      card.querySelector('h3')?.textContent.trim().toLowerCase().includes('mdps')
+      card.querySelector('h3')?.textContent.trim().toLowerCase().includes('mdps') ||
+      card.querySelector('h3')?.textContent.trim().toLowerCase().includes('outreach')
     );
 
     const academicCourses = [
       ['Storytelling using Data Visualization', 'For PGDM-BDA students · data storytelling, dashboard thinking, visual analytics, and business communication'],
       ['LRCT', 'For PGDM-BDA students · logical reasoning, critical thinking, arguments, decisions, and ethical reasoning'],
-      ['MLOps', 'For PGDM-BDA students · production ML workflows, experiment tracking, deployment readiness, and responsible model operations'],
+      ['MLOps', 'For PGDM-BDA students and Data Engineering certification learners · production ML workflows, lifecycle management, reproducibility, monitoring, MLflow, Docker, and deployment pipelines'],
       ['Sports Analytics', 'For PGDM-BDA students · performance analytics, player/team metrics, scouting logic, and data-driven sports decisions'],
       ['Healthcare Analytics', 'For PGDM-HCM students · clinical, operational, public-health, and healthcare decision analytics'],
       ['Intelligent Research: AI Applications & Techniques', 'For FPM students · AI-assisted literature review, research design, academic writing, and responsible scholarly workflows'],
@@ -167,14 +169,13 @@ document.addEventListener('DOMContentLoaded', () => {
       ['Deep Learning', 'For Data Engineering certification courses · neural networks, CNNs, transfer learning, and applied model development'],
       ['NLP', 'For Data Engineering certification courses · text preprocessing, embeddings, transformers, and language analytics'],
       ['DevOps', 'For Data Engineering certification courses · Git, CI/CD, containerization, deployment, and engineering workflows'],
-      ['MLOps', 'For Data Engineering certification courses · ML lifecycle, reproducibility, monitoring, MLflow, Docker, and deployment pipelines'],
       ['ETL/SQL', 'For Data Engineering certification courses · data extraction, transformation, loading, database querying, and pipeline design'],
       ['Python and R Programming', 'For Data Engineering certification courses · programming foundations, analytics scripting, data manipulation, and reproducible analysis']
     ];
 
     const mdpPrograms = [
       ['Gen AI for Executive Management', 'MDP for AJNIF MBA Graduates · executive AI literacy, managerial decision-making, productivity workflows, governance, and strategic adoption'],
-      ['Gen AI — Classroom to Career', 'MDP/workshop for UG students across Government Institutes of Goa · employability, responsible prompting, career readiness, and AI-enabled learning'],
+      ['Gen AI — Classroom to Career', 'For UG students across Government Institutes of Goa · employability, responsible prompting, career readiness, and AI-enabled learning'],
       ['GenAI & Pedagogical Innovation', 'Faculty development on AI-integrated teaching, assessment redesign, classroom productivity, and responsible academic use'],
       ['AI for Railways & Applied Analytics', 'Industry MDP for rail sector professionals focused on analytics opportunities, process improvement, and AI adoption'],
       ['Data Visualization & Decision-Making', 'Workshops for analytics practitioners using dashboards, visual reasoning, and management-oriented data communication'],
@@ -207,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const sectionSub = document.querySelector('#teaching .section-sub');
     if (sectionSub) {
-      sectionSub.textContent = 'Audience-specific courses, executive MDPs, faculty development programs, and applied AI learning experiences across management, healthcare, engineering, research, and data engineering.';
+      sectionSub.textContent = 'Audience-specific academic courses, executive MDPs, faculty development programs, and applied AI learning experiences across management, healthcare, engineering, research, and data engineering.';
     }
   })();
 
@@ -249,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── PUBLICATION FILTER ──
   const pubFilters = document.querySelectorAll('.pub-filter');
-  const pubItems   = document.querySelectorAll('.pub-item');
+  const pubItems = document.querySelectorAll('.pub-item');
 
   pubFilters.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -259,18 +260,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       pubItems.forEach(item => {
         const match = filter === 'all' || item.dataset.type === filter;
-        if (match) {
-          item.classList.remove('is-hidden');
-          item.style.display = '';
-        } else {
-          item.classList.add('is-hidden');
-          item.style.display = 'none';
-        }
+        item.classList.toggle('is-hidden', !match);
+        item.style.display = match ? '' : 'none';
       });
     });
   });
 
-  // ── SMOOTH ANCHOR SCROLL (with offset for fixed header) ──
+  // ── SMOOTH ANCHOR SCROLL ──
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
       const target = document.querySelector(anchor.getAttribute('href'));
@@ -299,17 +295,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.4 });
 
-  sections.forEach(s => sectionObserver.observe(s));
+  sections.forEach(section => sectionObserver.observe(section));
 
   // ── FORM SUBMIT FEEDBACK ──
   const form = document.querySelector('.contact-form');
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', () => {
       const btn = form.querySelector('button[type="submit"]');
       if (btn) {
         btn.textContent = 'Sending…';
         btn.disabled = true;
-        // Re-enable after 4s as fallback (Formspree handles redirect)
         setTimeout(() => {
           btn.innerHTML = '<span>Send message</span>';
           btn.disabled = false;
@@ -318,9 +313,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ── RESEARCH CARD PARALLAX ON MOUSE MOVE ──
-  const researchCards = document.querySelectorAll('.research-card, .project-card');
-  researchCards.forEach(card => {
+  // ── RESEARCH CARD PARALLAX ──
+  const interactiveCards = document.querySelectorAll('.research-card, .project-card');
+  interactiveCards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width - 0.5;
