@@ -65,6 +65,82 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ── LATEST GITHUB PROJECTS ──
+  (function renderLatestGitHubProjects() {
+    const projectGrid = document.querySelector('#projects .project-grid');
+    if (!projectGrid) return;
+
+    const latestProjects = [
+      {
+        title: 'ResumeCraft AI Studio',
+        icon: '🎯',
+        url: 'https://github.com/dr-alok-tiwari/ResumeCraft-AI-Studio',
+        description: 'Zero-cost Streamlit resume studio for ATS scoring, JD matching, resume parsing, guided resume building, bullet refinement, and PDF/DOCX/TXT export.',
+        stack: ['Streamlit', 'Python', 'ATS Scoring', 'JD Matching']
+      },
+      {
+        title: 'AI Career Readiness Studio',
+        icon: '🚀',
+        url: 'https://github.com/dr-alok-tiwari/AI-Career-Readiness-Studio',
+        description: 'Workshop-ready, no-API career-readiness app for students covering prompts, resumes, role fit, interviews, emails, LinkedIn, data analysis, and responsible AI.',
+        stack: ['Streamlit', 'Career Readiness', 'Prompting', 'No API']
+      },
+      {
+        title: 'Course Design Studio',
+        icon: '🧩',
+        url: 'https://github.com/dr-alok-tiwari/course-design-studio',
+        description: 'Offline course-design toolkit for course profiles, CLO-PLO mapping, rubrics, quizzes, exam papers, PPT outlines, study material, caselets, and gamification plans.',
+        stack: ['OBE', 'Rubrics', 'Assessment', 'PPT Export']
+      },
+      {
+        title: 'JournalFit Studio',
+        icon: '📚',
+        url: 'https://github.com/dr-alok-tiwari/journalfit-studio',
+        description: 'Responsible journal discovery and manuscript-fit assistant using local metadata, TF-IDF evidence, keyword overlap, area alignment, reports, and verification prompts.',
+        stack: ['Research Tools', 'TF-IDF', 'Journal Fit', 'Responsible Use']
+      },
+      {
+        title: 'Machine Learning for Managers Studio',
+        icon: '📊',
+        url: 'https://github.com/dr-alok-tiwari/Machine-Learning-for-Managers-Studio',
+        description: 'Managerial ML learning studio for PGDM/MBA learners with visual roadmaps, algorithm advisors, evaluation tools, XAI, ethics, Orange labs, case studies, and prompts.',
+        stack: ['ML for Managers', 'XAI', 'Orange', 'Case Studies']
+      },
+      {
+        title: 'Fix the Friction — Staff Retreat 2026',
+        icon: '🛠️',
+        url: 'https://github.com/dr-alok-tiwari/fix-the-friction-staff-retreat-2026',
+        description: 'Constructive Streamlit retreat tool for issue exploration, bottleneck synthesis, impact-feasibility prioritization, 5-Whys analysis, roadmap planning, and reflection capture.',
+        stack: ['Streamlit', 'Process Improvement', 'Dashboard', 'Roadmap']
+      }
+    ];
+
+    const existingTitles = Array.from(projectGrid.querySelectorAll('h3'))
+      .map(title => title.textContent.trim().toLowerCase());
+
+    latestProjects.forEach(project => {
+      if (existingTitles.includes(project.title.toLowerCase())) return;
+
+      const card = document.createElement('a');
+      card.className = 'project-card fade-up';
+      card.href = project.url;
+      card.target = '_blank';
+      card.rel = 'noreferrer';
+      card.setAttribute('aria-label', `Open ${project.title} on GitHub`);
+
+      const chips = project.stack.map(item => `<span>${item}</span>`).join('');
+      card.innerHTML = `
+        <div class="pc-accent"></div>
+        <div class="pc-icon">${project.icon}</div>
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+        <div class="pc-stack">${chips}</div>
+      `;
+
+      projectGrid.appendChild(card);
+    });
+  })();
+
   // ── SCROLL REVEAL ──
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
